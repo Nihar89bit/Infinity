@@ -1,0 +1,19 @@
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and uploaded private media
+backend/database/*.sqlite
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend build output
+frontend/dist/
+
+# Logs and local tooling
+npm-debug.log*
+*.log
+.vscode/

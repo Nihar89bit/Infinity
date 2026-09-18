@@ -1,0 +1,16 @@
+{
+  "name": "our-little-world-couple-app",
+  "version": "1.0.0",
+  "description": "A beautiful, private, romantic full-stack couple website for memories, love notes, timeline, secret corner, and countdowns.",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "node backend/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
